@@ -1,0 +1,1 @@
+# satwa-qr-scanner
