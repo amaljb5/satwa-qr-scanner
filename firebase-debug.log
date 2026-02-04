@@ -1,0 +1,194 @@
+[debug] [2026-02-04T15:05:07.753Z] ----------------------------------------------------------------------
+[debug] [2026-02-04T15:05:07.763Z] Command:       /usr/local/bin/firebase /home/sckali/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase init hosting
+[debug] [2026-02-04T15:05:07.764Z] CLI Version:   15.5.1
+[debug] [2026-02-04T15:05:07.764Z] Platform:      linux
+[debug] [2026-02-04T15:05:07.775Z] Node Version:  v20.18.2
+[debug] [2026-02-04T15:05:07.776Z] Time:          Wed Feb 04 2026 20:35:07 GMT+0530 (India Standard Time)
+[debug] [2026-02-04T15:05:07.777Z] ----------------------------------------------------------------------
+[debug] 
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /home/sckali/Desktop/Food_QR
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] 
+[debug] [2026-02-04T15:05:22.023Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-02-04T15:05:22.025Z] > authorizing via signed-in user (amaljebi2006@gmail.com)
+[debug] [2026-02-04T15:05:22.027Z] Checked if tokens are valid: false, expires at: 1770205448873
+[debug] [2026-02-04T15:05:22.028Z] Checked if tokens are valid: false, expires at: 1770205448873
+[debug] [2026-02-04T15:05:22.028Z] > refreshing access token with scopes: []
+[debug] [2026-02-04T15:05:22.032Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2026-02-04T15:05:22.033Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2026-02-04T15:05:22.368Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2026-02-04T15:05:22.368Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2026-02-04T15:05:22.378Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2026-02-04T15:05:23.130Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2026-02-04T15:05:23.131Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] 
+=== Hosting Setup
+[debug] [2026-02-04T15:05:31.900Z] Checked if tokens are valid: true, expires at: 1770221121369
+[debug] [2026-02-04T15:05:31.900Z] Checked if tokens are valid: true, expires at: 1770221121369
+[debug] [2026-02-04T15:05:31.901Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/food-qr-scanner [none]
+[debug] [2026-02-04T15:05:32.345Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/food-qr-scanner 200
+[debug] [2026-02-04T15:05:32.345Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/food-qr-scanner {"projectId":"food-qr-scanner","projectNumber":"360745781618","displayName":"food-qr-scanner","name":"projects/food-qr-scanner","resources":{"hostingSite":"food-qr-scanner","realtimeDatabaseInstance":"food-qr-scanner-default-rtdb"},"state":"ACTIVE","etag":"1_b4bb59e9-956d-46e6-901a-9e808f6155b9"}
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[info] 
+[info] i  Detected a .git folder at /home/sckali/Desktop/Food_QR 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=393031609&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2026-02-04T15:06:56.102Z] >>> [apiv2][query] POST https://github.com/login/oauth/access_token [none]
+[debug] [2026-02-04T15:06:56.103Z] >>> [apiv2][body] POST https://github.com/login/oauth/access_token [stream]
+[debug] [2026-02-04T15:06:57.314Z] <<< [apiv2][status] POST https://github.com/login/oauth/access_token 200
+[debug] [2026-02-04T15:06:57.314Z] <<< [apiv2][body] POST https://github.com/login/oauth/access_token {"access_token":"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","token_type":"bearer","scope":"read:user,repo"}
+[debug] [2026-02-04T15:06:57.323Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2026-02-04T15:06:57.839Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2026-02-04T15:06:57.839Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"amaljb5","id":84699385,"node_id":"MDQ6VXNlcjg0Njk5Mzg1","avatar_url":"https://avatars.githubusercontent.com/u/84699385?v=4","gravatar_id":"","url":"https://api.github.com/users/amaljb5","html_url":"https://github.com/amaljb5","followers_url":"https://api.github.com/users/amaljb5/followers","following_url":"https://api.github.com/users/amaljb5/following{/other_user}","gists_url":"https://api.github.com/users/amaljb5/gists{/gist_id}","starred_url":"https://api.github.com/users/amaljb5/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/amaljb5/subscriptions","organizations_url":"https://api.github.com/users/amaljb5/orgs","repos_url":"https://api.github.com/users/amaljb5/repos","events_url":"https://api.github.com/users/amaljb5/events{/privacy}","received_events_url":"https://api.github.com/users/amaljb5/received_events","type":"User","user_view_type":"private","site_admin":false,"name":"Amal JB","company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":"Computer Science Student | Cybersecurity Ethusiast | Ethical Hacker to-be ","twitter_username":null,"notification_email":null,"public_repos":5,"public_gists":0,"followers":8,"following":11,"created_at":"2021-05-24T05:35:58Z","updated_at":"2026-02-04T10:47:44Z","private_gists":0,"total_private_repos":1,"owned_private_repos":1,"disk_usage":3397,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] ✔  Success! Logged into GitHub as amaljb5 
+[info] 
+[debug] [2026-02-04T15:07:25.132Z] >>> [apiv2][query] GET https://api.github.com/repos/https://github.com/amaljb5/satwa-qr-scanner//actions/secrets/public-key type=owner
+[debug] [2026-02-04T15:07:25.531Z] <<< [apiv2][status] GET https://api.github.com/repos/https://github.com/amaljb5/satwa-qr-scanner//actions/secrets/public-key 404
+[debug] [2026-02-04T15:07:25.531Z] <<< [apiv2][body] GET https://api.github.com/repos/https://github.com/amaljb5/satwa-qr-scanner//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest","status":"404"}
+[info] 
+[info] 
+[error] ⚠  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 
+[debug] [2026-02-04T15:33:29.821Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:161:15)
+    at writeGeneric (node:internal/stream_base_commons:152:3)
+    at Socket._writeGeneric (node:net:958:11)
+    at Socket._write (node:net:970:8)
+    at writeOrBuffer (node:internal/streams/writable:572:12)
+    at _write (node:internal/streams/writable:501:10)
+    at Writable.write (node:internal/streams/writable:510:10)
+    at MuteStream.ondata (node:internal/streams/legacy:21:31)
+    at MuteStream.emit (node:events:518:28)
+    at MuteStream.write (/home/sckali/.cache/firebase/tools/lib/node_modules/mute-stream/lib/index.js:112:10)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2026-02-04T15:33:29.825Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:161:15)
+    at writeGeneric (node:internal/stream_base_commons:152:3)
+    at Socket._writeGeneric (node:net:958:11)
+    at Socket._write (node:net:970:8)
+    at writeOrBuffer (node:internal/streams/writable:572:12)
+    at _write (node:internal/streams/writable:501:10)
+    at Writable.write (node:internal/streams/writable:510:10)
+    at Console.log (/home/sckali/.cache/firebase/tools/lib/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/sckali/.cache/firebase/tools/lib/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/sckali/.cache/firebase/tools/lib/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2026-02-04T15:33:29.828Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:161:15)
+    at writeGeneric (node:internal/stream_base_commons:152:3)
+    at Socket._writeGeneric (node:net:958:11)
+    at Socket._write (node:net:970:8)
+    at writeOrBuffer (node:internal/streams/writable:572:12)
+    at _write (node:internal/streams/writable:501:10)
+    at Writable.write (node:internal/streams/writable:510:10)
+    at Console.log (/home/sckali/.cache/firebase/tools/lib/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/sckali/.cache/firebase/tools/lib/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/sckali/.cache/firebase/tools/lib/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2026-02-04T15:33:29.830Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:161:15)
+    at writeGeneric (node:internal/stream_base_commons:152:3)
+    at Socket._writeGeneric (node:net:958:11)
+    at Socket._write (node:net:970:8)
+    at writeOrBuffer (node:internal/streams/writable:572:12)
+    at _write (node:internal/streams/writable:501:10)
+    at Writable.write (node:internal/streams/writable:510:10)
+    at Console.log (/home/sckali/.cache/firebase/tools/lib/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/sckali/.cache/firebase/tools/lib/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/sckali/.cache/firebase/tools/lib/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2026-02-04T15:33:29.831Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:161:15)
+    at writeGeneric (node:internal/stream_base_commons:152:3)
+    at Socket._writeGeneric (node:net:958:11)
+    at Socket._write (node:net:970:8)
+    at writeOrBuffer (node:internal/streams/writable:572:12)
+    at _write (node:internal/streams/writable:501:10)
+    at Writable.write (node:internal/streams/writable:510:10)
+    at Console.log (/home/sckali/.cache/firebase/tools/lib/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/sckali/.cache/firebase/tools/lib/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/sckali/.cache/firebase/tools/lib/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2026-02-04T15:33:29.833Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:161:15)
+    at writeGeneric (node:internal/stream_base_commons:152:3)
+    at Socket._writeGeneric (node:net:958:11)
+    at Socket._write (node:net:970:8)
+    at writeOrBuffer (node:internal/streams/writable:572:12)
+    at _write (node:internal/streams/writable:501:10)
+    at Writable.write (node:internal/streams/writable:510:10)
+    at Console.log (/home/sckali/.cache/firebase/tools/lib/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/sckali/.cache/firebase/tools/lib/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/sckali/.cache/firebase/tools/lib/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2026-02-04T15:33:29.835Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:161:15)
+    at writeGeneric (node:internal/stream_base_commons:152:3)
+    at Socket._writeGeneric (node:net:958:11)
+    at Socket._write (node:net:970:8)
+    at writeOrBuffer (node:internal/streams/writable:572:12)
+    at _write (node:internal/streams/writable:501:10)
+    at Writable.write (node:internal/streams/writable:510:10)
+    at Console.log (/home/sckali/.cache/firebase/tools/lib/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/sckali/.cache/firebase/tools/lib/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/sckali/.cache/firebase/tools/lib/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2026-02-04T15:33:29.836Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:161:15)
+    at writeGeneric (node:internal/stream_base_commons:152:3)
+    at Socket._writeGeneric (node:net:958:11)
+    at Socket._write (node:net:970:8)
+    at writeOrBuffer (node:internal/streams/writable:572:12)
+    at _write (node:internal/streams/writable:501:10)
+    at Writable.write (node:internal/streams/writable:510:10)
+    at Console.log (/home/sckali/.cache/firebase/tools/lib/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/sckali/.cache/firebase/tools/lib/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/sckali/.cache/firebase/tools/lib/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2026-02-04T15:33:29.840Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:161:15)
+    at writeGeneric (node:internal/stream_base_commons:152:3)
+    at Socket._writeGeneric (node:net:958:11)
+    at Socket._write (node:net:970:8)
+    at writeOrBuffer (node:internal/streams/writable:572:12)
+    at _write (node:internal/streams/writable:501:10)
+    at Writable.write (node:internal/streams/writable:510:10)
+    at Console.log (/home/sckali/.cache/firebase/tools/lib/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/sckali/.cache/firebase/tools/lib/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/sckali/.cache/firebase/tools/lib/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
